@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-guLbDoe34dvn9a2p9zYjOHWKjve/2H5PV+Cjz7r5r8GCc4O0iUjFHrxoHym8cp+X" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" href="/Imagenes/Logo.png" >
+</head>
+<body>
+
+    <div>
+    <main >
+        <!--Campo para ingresar text-->
+        <section>
+            <textarea class="textoEncriptar" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">
+                    <span class="icono-info">&#9432;</span> Solo letras minúsculas y sin acentos
+                </h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEcriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesecriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+                <textarea class="mensaje" cols="20" rows="10"></textarea>
+                <div>
+                    <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="redes-sociales">
+            <li><a href="https://www.linkedin.com/in/juan-esteban-ortiz-jaramillo-767997275/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+    
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/86c594d8f6.js" crossorigin="anonymous"></script>
+</body>
+</html>
